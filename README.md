@@ -47,6 +47,7 @@ The Bond Yield Calculator is a mobile application designed for investors, financ
 ## 🚀 Installation
 
 ### Prerequisites
+
 - Node.js 14+ and npm
 - Expo CLI (optional, for running on device)
 - React Native development environment
@@ -54,11 +55,13 @@ The Bond Yield Calculator is a mobile application designed for investors, financ
 ### Setup
 
 1. **Clone or navigate to the project**
+
    ```bash
    cd bond-yield-app
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
@@ -68,25 +71,40 @@ The Bond Yield Calculator is a mobile application designed for investors, financ
    npm test
    ```
 
-## 📖 Usage
+## � Demo Videos
+
+### iOS Demo
+
+📹 [Watch iOS Demo Video](https://drive.google.com/file/d/1ahNGPkgSZ9rK3EQySiNdNyobf9e1Od0a/view?usp=sharing)
+
+### Android Demo
+
+📹 [Watch Android Demo Video](https://drive.google.com/file/d/1MbBNO6Kr7fNAt6y6LgPrrUSnhKprb0w1/view?usp=sharing)
+
+## �📖 Usage
 
 ### Running the Application
 
 **Development with Expo:**
+
 ```bash
 npm start
 ```
+
 Then press:
+
 - `i` for iOS simulator
 - `a` for Android emulator
 - `w` for web preview
 
 **Running Tests:**
+
 ```bash
 npm test
 ```
 
 **Type Checking:**
+
 ```bash
 npx tsc --noEmit
 ```
@@ -147,39 +165,47 @@ bond-yield-app/
 ## 🔧 Technologies & Dependencies
 
 ### Core
+
 - **React Native 0.83.2** - Cross-platform mobile framework
 - **TypeScript 5.9.2** - Static typing for JavaScript
 - **Expo 55.0.7** - React Native development platform
 
 ### UI & Styling
+
 - **react-native-safe-area-context** - Safe area utilities for notches/cutouts
 - **React Native StyleSheet** - Component styling
 
 ### Testing
+
 - **Jest 29.7.0** - JavaScript testing framework
 - **ts-jest 29.1.1** - TypeScript support for Jest
 - **@testing-library/react-native** - React Native component testing
 
 ### Development
+
 - **@react-native-async-storage/async-storage** - Local storage
 - **expo-status-bar** - Status bar utilities
 
 ## 📊 Bond Calculations Explained
 
 ### Current Yield
+
 ```
 Current Yield = (Annual Coupon Payment / Market Price) × 100%
 ```
 
 ### Yield to Maturity (YTM)
+
 Uses Newton-Raphson numerical method to solve for the discount rate that equates bond price to present value of cash flows.
 
 ### Total Interest Earned
+
 ```
 Total Interest = (Total Coupon Payments) + (Face Value - Market Price)
 ```
 
 ### Bond Status
+
 - **Par**: Market Price = Face Value
 - **Premium**: Market Price > Face Value
 - **Discount**: Market Price < Face Value
@@ -189,22 +215,26 @@ Total Interest = (Total Coupon Payments) + (Face Value - Market Price)
 The project includes 60+ comprehensive tests covering:
 
 ### Unit Tests
+
 - Bond calculation functions
 - Validation logic
 - Type definitions
 - Date formatting
 
 ### Integration Tests
+
 - Component interaction flows
 - Form submission and validation
 - Results display with calculations
 
 ### Test Patterns
+
 - Snapshot testing for UI components
 - Mock testing for external dependencies
 - Edge case and error scenario coverage
 
 **Test Results:**
+
 ```
 Test Suites: 4 passed, 4 total
 Tests:       60 passed, 60 total
@@ -214,6 +244,7 @@ Time:        ~1.4s
 ## 🎨 UI/UX Features
 
 ### Input Form
+
 - Clean, intuitive field layout
 - Real-time validation with helpful error messages
 - Visual indicators for valid/invalid fields
@@ -221,12 +252,14 @@ Time:        ~1.4s
 - Clear button for resetting form
 
 ### Results Display
+
 - Color-coded bond status (Green=Par, Orange=Premium, Red=Discount)
 - Card-based layout for each metric
 - Professional typography and spacing
 - Auto-scroll to results after calculation
 
 ### Cash Flow Table
+
 - Banking application-grade styling
 - Dark blue header with white text
 - Professional color scheme (#1a3a52)
@@ -239,17 +272,18 @@ Time:        ~1.4s
 
 All inputs are validated with clear, contextual error messages:
 
-| Field | Validation | Error Message |
-|-------|-----------|---------------|
-| Face Value | Required, positive number | "Enter the bond's par value (e.g., 1000)" |
-| Coupon Rate | Required, 0-100 | "Enter annual coupon rate as percentage (e.g., 5)" |
-| Market Price | Required, positive number | "Enter current market price (e.g., 950)" |
-| Years | Required, 0.25-100 | "Years must be between 0.25 and 100" |
-| Frequency | Required | "Select payment frequency" |
+| Field        | Validation                | Error Message                                      |
+| ------------ | ------------------------- | -------------------------------------------------- |
+| Face Value   | Required, positive number | "Enter the bond's par value (e.g., 1000)"          |
+| Coupon Rate  | Required, 0-100           | "Enter annual coupon rate as percentage (e.g., 5)" |
+| Market Price | Required, positive number | "Enter current market price (e.g., 950)"           |
+| Years        | Required, 0.25-100        | "Years must be between 0.25 and 100"               |
+| Frequency    | Required                  | "Select payment frequency"                         |
 
 ## 🚦 Error Handling
 
 The app handles edge cases including:
+
 - Negative or missing values
 - Invalid number formats
 - Extreme input ranges
@@ -326,6 +360,7 @@ type CashFlow = {
 ## 📝 Code Examples
 
 ### Calculate Bond Metrics
+
 ```typescript
 import {
   calculateCurrentYield,
@@ -333,7 +368,7 @@ import {
   calculateTotalInterest,
   getBondStatus,
   calculateCashFlows,
-} from './utils/bondCalculations';
+} from "./utils/bondCalculations";
 
 const currentYield = calculateCurrentYield(1000, 5, 950);
 // Returns: 0.0526 (5.26%)
@@ -352,6 +387,7 @@ const cashFlows = calculateCashFlows(1000, 5, 10, 1);
 ```
 
 ### Validate Bond Input
+
 ```typescript
 import InputForm from './components/InputForm';
 
@@ -379,6 +415,6 @@ Built with React Native, Expo, and TypeScript for accurate bond yield analysis.
 
 ---
 
-**Last Updated**: March 2026  
-**Version**: 1.0.0  
+**Last Updated**: March 2026
+**Version**: 1.0.0
 **Status**: Production Ready ✅
