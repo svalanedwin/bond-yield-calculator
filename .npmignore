@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+coverage/
+.nyc_output/
+jest-results.json
+__tests__/
+
+# macOS
+.DS_Store
+*.pem
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+CONTRIBUTING.md
+docs/
+
+# Config
+tsconfig.json
+jest.config.js
+jest.setup.js
+
+# Native
+/ios
+/android
+.kotlin/
+
+# Other
+*.log
+.cache/
+temp/
+.turbo/

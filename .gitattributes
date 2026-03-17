@@ -1,0 +1,46 @@
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# ============================================================================
+# Text Files
+# ============================================================================
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.html text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.prettierrc text eol=lf
+.eslintrc text eol=lf
+tsconfig.json text eol=lf
+jest.config.js text eol=lf
+package.json text eol=lf
+app.json text eol=lf
+
+# ============================================================================
+# Binary Files
+# ============================================================================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.otf binary
+*.keystore binary
+*.ipa binary
+*.apk binary

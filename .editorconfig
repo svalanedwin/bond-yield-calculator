@@ -1,0 +1,52 @@
+# EditorConfig helps maintain consistent coding styles across different editors and IDEs
+# See https://editorconfig.org
+
+root = true
+
+# All files
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = 100
+
+# JavaScript, TypeScript, JSX, TSX
+[*.{js,jsx,ts,tsx}]
+indent_size = 2
+quote_type = double
+
+# JSON
+[*.json]
+indent_size = 2
+
+# YAML
+[*.{yml,yaml}]
+indent_size = 2
+
+# Markdown
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+# Shell scripts
+[*.sh]
+end_of_line = lf
+
+# Batch files
+[*.bat]
+end_of_line = crlf
+
+# Gradle
+[*.gradle]
+indent_size = 4
+
+# CMake
+[CMakeLists.txt]
+indent_size = 2
+
+# Pod
+[{Podfile,*.podspec}]
+indent_size = 2

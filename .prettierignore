@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Expo
+.expo/
+.expo-shared/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+web-build/
+
+# Coverage
+coverage/
+
+# Generated files
+*.generated.ts
+*.generated.js
+
+# Native
+/ios/
+/android/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Other
+.git/
+.gitignore
+.env*
+*.log

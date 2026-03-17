@@ -1,15 +1,32 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# ============================================================================
+# Dependencies
+# ============================================================================
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
 
-# Expo
+# ============================================================================
+# Expo / React Native
+# ============================================================================
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
+*.jsbundle
+*.apk
+*.aab
+*.ipa
+*.app
 
-# Native
+# ============================================================================
+# Native Platform Artifacts
+# ============================================================================
 .kotlin/
 *.orig.*
 *.jks
@@ -17,25 +34,212 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+*.keystore
+build/
 
 # Metro
 .metro-health-check*
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# ============================================================================
+# Environment & Configuration
+# ============================================================================
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
 
-# macOS
+# ============================================================================
+# IDE & Editor
+# ============================================================================
+.vscode/
+.vscode-project
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+*.iml
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# ============================================================================
+# macOS
+# ============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 *.pem
 
-# local env files
-.env*.local
+# ============================================================================
+# Windows
+# ============================================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# typescript
+# ============================================================================
+# Linux
+# ============================================================================
+.directory
+*~
+
+# ============================================================================
+# Testing & Coverage
+# ============================================================================
+coverage/
+.nyc_output/
+*.lcov
+jest-results.json
+test-results/
+.coverage/
+__tests__/coverage/
+
+# ============================================================================
+# TypeScript
+# ============================================================================
 *.tsbuildinfo
+.ts-node/
 
-# generated native folders
-/ios
-/android
+# ============================================================================
+# Build & Distribution
+# ============================================================================
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+out/
+*.bundle
+
+# ============================================================================
+# Logs
+# ============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# ============================================================================
+# Runtime & Process Files
+# ============================================================================
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================================================
+# Generated Files
+# ============================================================================
+*.generated.ts
+*.generated.js
+*.d.ts
+
+# ============================================================================
+# Generated Native Folders
+# ============================================================================
+/ios/
+/android/
+
+# ============================================================================
+# Platform Specific Build Artifacts
+# ============================================================================
+# iOS
+ios/Pods/
+ios/Podfile.lock
+ios/build/
+ios/Flutter/Flutter.podspec
+*.xcworkspace/
+*.xcodeproj/xcuserdata/
+DerivedData/
+
+# Android
+android/app/debug/
+android/app/release/
+android/local.properties
+android/.gradle/
+android/build/
+android/.idea/
+
+# ============================================================================
+# Other Build Tools
+# ============================================================================
+.grunt/
+bower_components/
+.eslintcache
+.stylelintcache
+
+# ============================================================================
+# Temporary & Cache Files
+# ============================================================================
+tmp/
+temp/
+*.tmp
+.cache
+.parcel-cache
+.webpack/
+.turbo/
+
+# ============================================================================
+# Analytics & Instrumentation
+# ============================================================================
+.heapsnapshot
+.sentry/
+sentry.properties
+
+# ============================================================================
+# Cloud & Deployment
+# ============================================================================
+.firebase/
+.firebaserc
+.netlify
+.vercel
+functions/node_modules/
+
+# ============================================================================
+# Package Manager Locks (optional - uncomment to track)
+# ============================================================================
+# Uncomment if you want to track lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================================================
+# Large Binary Files
+# ============================================================================
+*.bin
+*.exe
+*.dll
+*.so
+*.dylib
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
+*.dmg
+*.pkg
